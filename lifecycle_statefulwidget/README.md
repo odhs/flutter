@@ -1,9 +1,9 @@
-# Life Cycle of a StatefulWidget
+# _Life Cycle of a StatefulWidget_
 
-## O que é o ciclo de vida de um StatefulWidget?
+## O que é o ciclo de vida de um _StatefulWidget_?
 
-É a sequência de etapas pelas quais um widget com estado (StatefulWidget) passa: desde a criação, atualização e destruição.
-Este exemplo de aplicação mostra o ciclo de vida do StatefulWidget, você o rodará e ao interagir poderá ver no log os passos do ciclo de vida.
+É a sequência de etapas pelas quais um widget com estado (_StatefulWidget_) passa: desde a criação, atualização e destruição.
+Este exemplo de aplicação mostra o ciclo de vida do _StatefulWidget_, você o rodará e ao interagir poderá ver no log os passos do ciclo de vida.
 
 | Ordem | Método                    | Quando acontece?                                             |
 | ----- | ------------------------- | ------------------------------------------------------------ |
