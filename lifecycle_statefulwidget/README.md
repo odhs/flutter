@@ -1,16 +1,15 @@
-# lifecycle_statefulwidget
+# Life Cycle of a StatefulWidget
 
-A new Flutter project.
+## O que é o ciclo de vida de um StatefulWidget?
 
-## Getting Started
+É a sequência de etapas pelas quais um widget com estado (StatefulWidget) passa: desde a criação, atualização e destruição.
+Este exemplo de aplicação mostra o ciclo de vida do StatefulWidget, você o rodará e ao interagir poderá ver no log os passos do ciclo de vida.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+| Ordem | Método                    | Quando acontece?                                             |
+| ----- | ------------------------- | ------------------------------------------------------------ |
+| 1️⃣   | `createState()`           | Quando o widget é criado (chama a classe `State`).           |
+| 2️⃣   | `initState()`             | Uma vez só, na inicialização — ótimo p/ animações, APIs.     |
+| 3️⃣   | `didChangeDependencies()` | Sempre que algo no `context` muda, ex: `InheritedWidget`.    |
+| 4️⃣   | `build()`                 | Sempre que o estado muda (chamou `setState()` por ex).       |
+| 5️⃣   | `didUpdateWidget()`       | Quando o widget pai é recriado e passa novos parâmetros.     |
+| 6️⃣   | `dispose()`               | Quando o widget sai da tela — ótimo p/ limpar controladores. |
